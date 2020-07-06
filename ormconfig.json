@@ -1,0 +1,17 @@
+{
+    "type": "postgres",
+    "host": "baobadatabase.cxcs5xtq9ixh.sa-east-1.rds.amazonaws.com",
+    "port": 5432,
+    "username": "postgres",
+    "password": "baobawesports",
+    "database": "postgres",
+    "entities":[
+        "./src/models/*{.ts,.js}"
+    ],
+    "migrations": [
+        "./src/database/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
+}
